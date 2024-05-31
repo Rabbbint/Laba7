@@ -16,8 +16,10 @@ def find_max_substring_multiplicity(word, substring):
     return max_multiplicity
 
 
-word = input("Введите поисковый запрос: ")
-substring = input("Введите подстроку для анализа: ")
+if __name__ == "__main__":
+    word = input("Введите поисковый запрос: ")
+    str = input("Введите подстроку для анализа: ")
 
-max_multiplicity = find_max_substring_multiplicity(word, substring)
-print(f"Максимальная кратность подстроки '{substring}' в запросе '{word}': {max_multiplicity}")
+    max_multiplicity = find_max_substring_multiplicity(word, str)
+    print(
+        f"Максимальная кратность подстроки '{str}' в запросе '{word}': {max_multiplicity}")

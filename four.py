@@ -25,7 +25,8 @@ def levenshtein_distance(string1, string2):
     return matrix[len_str1][len_str2]
 
 
-string1 = input("Введите первую строку: ")
-string2 = input("Введите вторую строку: ")
-distance = levenshtein_distance(string1, string2)
-print(f"Минимальное количество операций: {distance}")
+if __name__ == "__main__":
+    string1 = input("Введите первую строку: ")
+    string2 = input("Введите вторую строку: ")
+    distance = levenshtein_distance(string1, string2)
+    print(f"Минимальное количество операций: {distance}")

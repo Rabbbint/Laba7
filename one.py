@@ -34,8 +34,10 @@ def print_ways_to_climb(n):
     return ways[n]
 
 
-stairs = int(input("Введите количество ступенек: "))
-print(f"Количество способов подняться на {stairs} ступеньку(и): {count_ways_to_climb(stairs)}")
-print("Способы подняться:")
-for g in print_ways_to_climb(stairs):
-    print(g)
+if __name__ == '__main__':
+    stairs = int(input("Введите количество ступенек: "))
+    print(
+        f"Количество способов подняться на {stairs} ступеньку(и): {count_ways_to_climb(stairs)}")
+    print("Способы подняться:")
+    for way in print_ways_to_climb(stairs):
+        print(way)
